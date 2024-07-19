@@ -1,0 +1,80 @@
+table#user-table {
+  width: 100%;
+
+}
+
+#heading {
+  font-size: 40px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+thead#tbl-heading {
+  background-color: #202020;
+  font-size: 18px;
+  color: #fff;
+}
+
+thead#tbl-heading td {
+  padding: 10px;
+  text-align: center;
+}
+
+tbody#tbl-body td {
+  padding: 7px;
+  text-align: center;
+}
+
+tbody#tbl-body tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 66px;
+}
+
+button#edit,
+button#delete,
+button#view {
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+button#edit {
+  background-color: #007bff;
+  transition: all 0.2s ease;
+}
+
+button#edit:hover {
+  background-color: #007bffbc;
+}
+
+button#delete {
+  background-color: #dc3545;
+  transition: all 0.2s ease;
+}
+
+button#delete:hover {
+  background-color: #dc3546b7;
+}
+
+button#view {
+  background-color: #5CB85A;
+  transition: all 0.2s ease;
+}
+
+button#view:hover {
+  background-color: #5cb85ac0;
+}

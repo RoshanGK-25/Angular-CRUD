@@ -1,0 +1,52 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 id="heading">{{routeTitle}}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <table id="user-table">
+          <thead id="tbl-heading">
+            <tr>
+              <td rowspan="2">Id</td>
+              <td rowspan="2">Name</td>
+              <td rowspan="2">Username</td>
+              <td rowspan="2">Email</td>
+              <td colspan="4">Address</td>
+              <td rowspan="2">Phone</td>
+              <td rowspan="2">Website</td>
+              <td rowspan="2">Company</td>
+              <td rowspan="2">Action</td>
+            </tr>
+          </thead>
+          <tbody id="tbl-body">
+            @for( user of userData; track user ){
+            <tr>
+              <td>{{user.id}}</td>
+              <td>{{user.name}}</td>
+              <td>{{user.username}}</td>
+              <td>{{user.email}}</td>
+              <td>{{user.address.street}}</td>
+              <td>{{user.address.suite}}</td>
+              <td>{{user.address.city}}</td>
+              <td>{{user.address.zipcode}}</td>
+              <td>{{user.phone}}</td>
+              <td>{{user.website}}</td>
+              <td>{{user.company.name}}</td>
+              <td class="btn-group">
+                <button id="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button id="view" (click)="editUser(user.id, user)"><i class="fa-solid fa-eye"></i></button>
+                <button id="delete" (click)="deleteUser(user.id)"><i class="fa-solid fa-trash"></i></button>
+              </td>
+            </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

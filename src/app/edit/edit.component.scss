@@ -1,0 +1,44 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+}
+
+form#users-form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.input input {
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #6f6f6f;
+  margin-bottom: 20px;
+}
+
+.input input:focus-visible {
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+.input input::placeholder {
+  font-size: 16px;
+}
+
+.form-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-btn {
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #5a44ff;
+  color: #fff;
+}
